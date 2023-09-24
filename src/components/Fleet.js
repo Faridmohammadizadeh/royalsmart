@@ -1,4 +1,4 @@
-function Navbar() {
+function Fleet() {
   return (
     <>
       <h1>---Fleet---</h1>
@@ -6,4 +6,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Fleet;
