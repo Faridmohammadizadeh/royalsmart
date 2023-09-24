@@ -1,7 +1,7 @@
 function Navbar() {
   return (
     <>
-      <h1>---navbar---</h1>
+      <h1>---Fleet---</h1>
     </>
   );
 }
