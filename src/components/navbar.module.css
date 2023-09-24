@@ -1,7 +1,6 @@
-.navLogo {
-  width: 1000px;
-}
-.container h1 {
-  background-color: blueviolet;
-  color: aqua;
+.navitem {
+  color: white;
+  display: flex;
+  margin-left: 0.2rem;
+  justify-content: center;
 }
