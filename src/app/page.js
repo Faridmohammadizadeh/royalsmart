@@ -1,5 +1,6 @@
 "use client";
 
+import "./globals.css";
 import React from "react";
 
 import Advertize from "../components/Advertize";
