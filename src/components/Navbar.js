@@ -40,29 +40,37 @@ export function Navbar() {
   //     setIsOpen(!isOpen);
   //   };
 
+  function Test() {
+    return (
+      <nav className="w-full h-24 bg-black navbar-nav">
+        <div className="flex justify-between items-center h-full w-full px-20 2xl:px-40">
+          <div>
+            <Link href="/">
+              <div className="flex justify-between items-center">
+                <Image src={logo} alt="logo" width="70" height="50" />
+                <Image src={logotype} alt="logo" height="50" className="ml-4" />
+              </div>
+            </Link>
+          </div>
+          <div>
+            <ul className={styles.navitem}>
+              {items.map((item) => (
+                <Link href={item.link}>
+                  <li key={item.titel} className="m-2">
+                    {item.titel}
+                  </li>
+                </Link>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </nav>
+    );
+  }
+
   return (
-    <nav className="fixed w-full h-24 bg-black">
-      <div className="flex justify-between items-center h-full w-full px-20 2xl:px-40">
-        <div>
-          <Link href="/">
-            <div className="flex justify-between items-center">
-              <Image src={logo} alt="logo" width="70" height="50" />
-              <Image src={logotype} alt="logo" height="50" className="ml-4" />
-            </div>
-          </Link>
-        </div>
-        <div>
-          <ul className={styles.navitem}>
-            {items.map((item) => (
-              <Link href={item.link}>
-                <li key={item.titel} className="m-2">
-                  {item.titel}
-                </li>
-              </Link>
-            ))}
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <div className={styles.navsec}>
+      <Test />
+    </div>
   );
 }

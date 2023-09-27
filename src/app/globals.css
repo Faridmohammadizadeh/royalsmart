@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'mont';
+    src: url(../font/Montserrat-Regular.ttf);
+   }
+   @font-face {
+    font-family: 'montthin';
+    src: url(../font/Montserrat-thin.ttf);
+   }
+   @font-face {
+    font-family: 'montlight';
+    src: url(../font/Montserrat-light.ttf);
+   }
+  
+  *{
+    font-family: 'mont',sans-serif, Courier, monospace !important;
+  }
