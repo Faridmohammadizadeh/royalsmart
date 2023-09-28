@@ -187,6 +187,19 @@ export default function Banner() {
       <div className={styles.bannerfromcard}>
         <BannerForm />
       </div>
+
+      <div className={styles.banner_pic_one}>
+        <div className={styles.banner_pic_text}>
+          <p>Be Our</p>
+          <p>Corporate Partner</p>
+        </div>
+      </div>
+      <div className={styles.banner_pic_two}>
+        <div className={styles.banner_pic_text}>
+          <p>Be Our</p>
+          <p>Driver/Investor</p>
+        </div>
+      </div>
     </div>
   );
 }
