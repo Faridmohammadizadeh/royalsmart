@@ -6,22 +6,19 @@
   justify-content: end;
   z-index: 1000;
   width: 100% !important;
-  margin: 0 2rem;
 }
 
 .navsec {
-  
   z-index: 100;
 }
-.navsec:only-child{
+.navsec:only-child {
   z-index: 1000 !important;
 }
 .test {
   color: red;
 }
-.navbar_navsec__HIqwu{
+.navbar_navsec__HIqwu {
   position: fixed !important;
-
 }
 .navbar-nav {
   position: fixed !important;

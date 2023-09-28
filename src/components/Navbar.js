@@ -42,7 +42,7 @@ export function Navbar() {
 
   function Test() {
     return (
-      <nav className="w-full h-24 bg-black navbar-nav">
+      <nav className="fixed w-full h-24 bg-transparent ">
         <div className="flex justify-between items-center h-full w-full px-20 2xl:px-40">
           <div>
             <Link href="/">

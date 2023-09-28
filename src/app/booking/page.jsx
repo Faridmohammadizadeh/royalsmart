@@ -4,7 +4,7 @@ import React, { Component } from "react";
 
 import Image from "next/image";
 import styles from "../../components/banner.module.css";
-import Map from 'react-map-gl';
+import Map from "react-map-gl";
 
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
@@ -16,7 +16,6 @@ import { DateTimePicker } from "@mui/x-date-pickers/DateTimePicker";
 import SquareIcon from "@mui/icons-material/Square";
 import PlaceIcon from "@mui/icons-material/Place";
 import Button from "@mui/material/Button";
-import SendIcon from "@mui/icons-material/Send";
 import logo from "../../assests/logo.png";
 import { Icon } from "@mui/material";
 
@@ -70,16 +69,15 @@ export default class Booking extends Component {
         </div>
         <div className={styles.form_box}>
           <div>
-          <Map
-      mapboxAccessToken="<Mapbox access token>"
-      initialViewState={{
-        longitude: -122.4,
-        latitude: 37.8,
-        zoom: 14
-      }}
-      mapStyle="mapbox://styles/mapbox/streets-v9"
-    />
-
+            <Map
+              mapboxAccessToken="<Mapbox access token>"
+              initialViewState={{
+                longitude: -122.4,
+                latitude: 37.8,
+                zoom: 14,
+              }}
+              mapStyle="mapbox://styles/mapbox/streets-v9"
+            />
           </div>
           <div className={styles.booking_form}>
             <Box
@@ -131,7 +129,7 @@ export default class Booking extends Component {
               </div>
               <div className={styles.form_part}>
                 <p>Mobile Number</p>
-                <TextField fullWidth id="mobile" variant="outlined"/>
+                <TextField fullWidth id="mobile" variant="outlined" />
               </div>
 
               <div className={styles.form_part}>
@@ -193,15 +191,11 @@ export default class Booking extends Component {
               </div>
             </Box>
             <div className={styles.submitformdiv}>
-            <Button
-              variant="contained"
-              className={styles.submitform}
-            >
-              Select Pickup
-            </Button>
+              <Button variant="contained" className={styles.submitform}>
+                Select Pickup
+              </Button>
             </div>
           </div>
-
         </div>
       </>
     );
